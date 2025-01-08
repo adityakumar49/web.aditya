@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table - for html</title>
+    <style>
+        /* General Styles */
+table {
+    width: 100%;
+    max-width: 800px; /* Limit max width for large screens */
+    margin: 20px auto; /* Center the table horizontally */
+    border-collapse: collapse; /* Remove spacing between table cells */
+    background-color: #fff; /* White background for the table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+}
+
+/* Header Style */
+thead {
+    background-color: #007BFF; /* Blue background for header */
+    color: white; /* White text color for headers */
+}
+
+th {
+    padding: 12px; /* Add padding for readability */
+    text-align: left; /* Align text to the left in headers */
+    font-size: 16px; /* Slightly larger font for headers */
+    font-weight: bold; /* Bold text for headers */
+}
+
+/* Body Style */
+tbody tr {
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+}
+
+td {
+    padding: 12px; /* Padding inside each cell */
+    font-size: 14px; /* Standard font size for table content */
+    text-align: left; /* Align text to the left in cells */
+}
+
+/* Row Hover Effect */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    table {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    th, td {
+        padding: 8px; /* Less padding on smaller screens */
+        border: 2px solid black;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>name </th>
+                <th>class</th>
+                <th>roll no </th>
+                <th>date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+             
+                <td>Aditya kumar </td>
+                <td>b tech </td>
+                <td>42</td>
+                <td>7/1/2025</td>
+                
+            <tr>
+                <td>roshani </td>
+                <td>B.A </td>
+                <td>123 </td>
+                <td>7/1/2025 </td>
+            </tr>
+            <td colspan="2">thank</td>
+            <br>
+            <td colspan="2">you</td>
+            
+            
+
+        </tbody>
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-for html </title>
+    <style>
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - For HTML</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main Form Container */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Input, Select, Textarea Styles */
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Label Styles */
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Section Spacing */
+        div {
+            margin-bottom: 20px;
+        }
+
+        /* Focused Input Styles */
+        input:focus, select:focus, textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            form {
+                padding: 15px;
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Your Details</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter name" required>
+        </div>
+        <div>
+            <label for="tp">Phone</label>
+            <input id="tp" type="tel" placeholder="Phone number" required>
+        </div>
+        <div>
+            <label for="gmail">Gmail</label>
+            <input id="gmail" type="email" placeholder="Enter Gmail" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter the password" required>
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input id="date" type="date" required>
+        </div>
+        <div>
+            <label for="General">Gender</label>
+            <select id="General" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <p>Subscription Plan</p>
+            <label for="basic">Basic</label>
+            <input id="basic" type="radio" name="subscription" value="basic">
+            <label for="premium">Premium</label>
+            <input id="premium" type="radio" name="subscription" value="premium">
+            <label for="vip">VIP</label>
+            <input id="vip" type="radio" name="subscription" value="vip">
+        </div>
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
+
+    </style>
+</head>
+
+<body>
+    <h1>your details</h1>
+     <form action="/sumbit.php">
+
+    <div>
+        <label for="name">name</label>
+        <input id="name" type="name"placeholder="enter name">
+    </div>
+    <div>
+        <lable for="tp">phone</lable>
+        <input type="tel"placeholder="phone number">
+    </div>
+    <div>
+        <lable for="gmail">gmail</lable>
+        <input id="gmail" type="gmail"placeholder="enter gmail">
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input id="password" type="password"placeholder="enter the password">
+    </div>
+    <div>
+        <label for="date" >date</label>
+        <input id="date" type="date"required>
+    </div>
+    <div>
+        <label for="General">General</label>
+        <select id="General"required>
+            <option value=""disabled select>select General</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+
+        </select>
+    </div>
+    <div>
+        <p>subscription plane</p>
+        <label for="basic">basic</label>
+        <input id="basic" type="radio" name="subscription" value="basic">
+
+        <label for="premium" > premium</label>
+        <input id="premium" type="radio" name="subscription"value="premium">
+
+        <label for="vip">vip</label>
+        <input id="vip"type="radio"name="subscription"value="premium"
+    </div>
+    <div>
+        <label for="comments">comments</label>
+        <textarea id="comments" placeholder="enter yiur comments"
+        rows="4"></textarea>
+        
+    </div>
+    
+    <div>
+        <button type="submit">submit</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .nav {
+            background-color: #333;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #ccc;
+        }
+    </style>
+    <title>Anchor Tag</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1>Your Favorite Apps</h1>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <br>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <br>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <br>
+        <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+    </div>
+
+    <script>
+        const navListElement = document.querySelector('.nav-list');
+
+        const navigationItems = [
+            { text: 'Home', href: '#' },
+            { text: 'About', href: '#about' },
+            { text: 'Blog', href: '#blog' },
+            { text: 'Service', href: '#service' },
+            { text: 'Contact', href: '#contact' }
+        ];
+
+        navigationItems.forEach((item) => {
+            const navItemElement = document.createElement('li');
+            navItemElement.className = 'nav-item';
+            const navLinkElement = document.createElement('a');
+            navLinkElement.className = 'nav-link';
+            navLinkElement.href = item.href;
+            navLinkElement.textContent = item.text;
+            navItemElement.appendChild(navLinkElement);
+            navListElement.appendChild(navItemElement);
+        });
+    </script> 
+</body>
+
+</html>
+
